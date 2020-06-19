@@ -1,6 +1,6 @@
 {
   "name": "@next-tools/redux",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "generate initRedux and useRedux to use in next js",
   "main": "dist.js",
   "scripts": {

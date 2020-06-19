@@ -58,7 +58,7 @@ This uses the exact concepts from the latest next js examples git repository for
      const store = initRedux();
      const data = await fetchData();
 
-     store.dispatch(actions.getSomething());
+     store.dispatch(actions.doSomething(data));
 
      return {
        initReduxState: store.getState()
@@ -82,7 +82,7 @@ This uses the exact concepts from the latest next js examples git repository for
      const store = initRedux();
      const data = await fetchData();
 
-     store.dispatch(actions.getSomething());
+     store.dispatch(actions.doSomething(data));
 
      return {
        props: {
@@ -108,7 +108,7 @@ This uses the exact concepts from the latest next js examples git repository for
      const store = initRedux();
      const data = await fetchData();
 
-     store.dispatch(actions.getSomething());
+     store.dispatch(actions.doSomething(data));
 
      return {
        props: {
