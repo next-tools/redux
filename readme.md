@@ -59,9 +59,11 @@ This uses the exact concepts from the latest next js examples git repository for
      const data = await fetchData();
 
      store.dispatch(actions.doSomething(data));
-
+     // only pass an init state if you are on the server
+     // this makes sure that you don't re-create the store every client-side transition
      return {
-       initReduxState: store.getState()
+       initReduxState:
+         typeof window === "undefined" ? store.getState() : undefined
      };
    };
    ```
