@@ -7,10 +7,6 @@ export default function (initStore) {
     let _reduxStore = reduxStore ?? initStore(initState);
 
     if (initState && reduxStore) {
-      console.log(
-        "test --- ",
-        "init state and redux store are both defined, so we need to merge and create a new store"
-      );
       _reduxStore = initStore({
         ...reduxStore.getState(),
         ...initState
