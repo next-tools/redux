@@ -1,6 +1,6 @@
 {
   "name": "@next-tools/redux",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "generate initRedux and useRedux to use in next js",
   "main": "dist.js",
   "scripts": {
@@ -22,9 +22,7 @@
     "redux with next"
   ],
   "peerDependencies": {
-    "next": "^9.0.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
